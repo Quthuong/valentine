@@ -1,0 +1,142 @@
+/* FONT */
+
+
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+
+/* BACKGROUND */
+
+body {
+  text-align: center;
+  font-family: 'Fondamento', cursive; 
+      background-image: linear-gradient(to right,#EE82EE 0,#1E90FF 100%);
+   
+}
+
+h2, h1 {
+  font-family: 'Fondamento', serif;
+  
+}
+
+/* BEATING HEART */
+
+.heart {
+  fill: tomato;
+  position: relative;
+  top: 5px;
+  width: 70px;
+  animation: pulse 1s ease infinite; 
+}
+@keyframes pulse{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  }
+
+/* FIRST BOX OF VALENTINE */
+
+.letter {
+  background-color: #FFFAFA;
+  width: 400px;
+  padding: 48px;
+  position: relative;  
+  max-width: 90vw;
+  margin: 5vh auto;
+  border-radius: 15px;
+  border: 2px solid #1E90FF;
+-webkit-box-shadow: -18px 21px 23px 3px rgba(0,0,0,1);
+-moz-box-shadow: -18px 21px 23px 3px rgba(0,0,0,1);
+box-shadow: -18px 21px 23px 3px rgba(0,0,0,1);
+}
+
+/* SECOND BOX OF VALENTINE */
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1.8s;
+}
+
+.modal-window > div {
+  border-radius: 25px;
+  border: 2px solid;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #ffffff;
+  color: #DC143C;
+
+  }
+
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1.8s;
+}
+
+.modal-window > div {
+  border-radius: 25px;
+  border: 2px solid;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #ffffff;
+  color: #191970;
+  
+  
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* THE MOVE OF THE FIST VALENTINE */
+
+    .letter {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+  transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  
